@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test-suite" parallel="tests" thread-count ="2">
+
+    <test name = "Login Test">
+    	<parameter name ="user" value = "TestUser"/>
+    	<parameter name ="pass" value = "12345@67890"/>
+    	<parameter name ="browser" value = "chrome"/>
+    	
+        <classes>
+            <class name = "tests.LoginWithTestNgParameters" />
+        </classes>
+    </test>
+    <test name = "Login Test2">
+    	<parameter name ="user" value = "TestUser"/>
+    	<parameter name ="pass" value = "12345@67890"/>
+    	<parameter name ="browser" value = "firefox"/>
+    	
+        <classes>
+            <class name = "tests.LoginWithTestNgParameters" />
+        </classes>
+    </test>
+</suite>
